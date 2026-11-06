@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Cockpit Revente",
+  "version": "1.0.0",
+  "description": "Tableau de bord de revente : stock, marges, ventes, agents d'offres et synchro de ton compte Vinted.",
+  "action": {
+    "default_title": "Cockpit Revente",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" }
+  },
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["storage", "unlimitedStorage", "activeTab", "scripting", "alarms"],
+  "host_permissions": ["https://api.anthropic.com/*", "https://*.supabase.co/*", "https://www.vinted.fr/*", "https://www.vinted.be/*", "https://www.vinted.es/*", "https://www.vinted.it/*", "https://www.vinted.de/*", "https://www.vinted.nl/*", "https://www.vinted.lu/*", "https://www.vinted.pt/*", "https://www.vinted.co.uk/*", "https://www.vinted.com/*"]
+}
